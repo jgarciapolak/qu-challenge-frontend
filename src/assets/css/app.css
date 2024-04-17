@@ -1,0 +1,79 @@
+/* Estilos generales para toda la aplicación */
+
+* {
+  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+}
+html {
+  display: block;
+  width: 100vw;
+  overflow-x: auto;
+  background-color: #f8f8f8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #0056b3;
+  color: #fff;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+button:hover {
+  filter: brightness(130%);
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.button-cancel {
+  background-color: gray;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+.button-delete {
+  background-color: rgb(255, 85, 85);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 12px;
+  }
+  #app {
+    display: block;
+    align-content: center;
+    width: fit-content;
+  }
+  button {
+    font-size: 12px;
+  }
+}

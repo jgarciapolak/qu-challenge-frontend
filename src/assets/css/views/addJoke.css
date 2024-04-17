@@ -1,0 +1,77 @@
+.add_joke {
+  padding: 20px;
+}
+.add_joke-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add_joke-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.add_joke-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add_joke-row {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.add_joke-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.add_joke-btn-create {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add_joke-btn-create:hover {
+  background-color: #0056b3;
+}
+
+.add_joke-back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+}
+
+.add_joke-back-button:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .add_joke {
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  .add_joke-container {
+    width: 90%;
+    box-sizing: border-box;
+  }
+}
