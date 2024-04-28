@@ -1,7 +1,7 @@
-.add_joke {
+.add-joke {
   padding: 20px;
 }
-.add_joke-container {
+.add-joke--container {
   width: 400px;
   margin: 0 auto;
   padding: 20px;
@@ -9,29 +9,29 @@
   border-radius: 5px;
 }
 
-.add_joke-container h2 {
+.add-joke--container--h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.add_joke-form {
+.add-joke--form {
   display: flex;
   flex-direction: column;
 }
 
-.add_joke-row {
+.add-joke--form--row {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-label {
+.add-joke--form--label {
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.add_joke-input {
+.add-joke--form--input {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -39,7 +39,7 @@ label {
   box-sizing: border-box;
 }
 
-.add_joke-btn-create {
+.add-joke--button--create {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -49,11 +49,11 @@ label {
   transition: background-color 0.3s;
 }
 
-.add_joke-btn-create:hover {
+.add-joke--button--create:hover {
   background-color: #0056b3;
 }
 
-.add_joke-back-button {
+.add-joke--button--back {
   display: inline-block;
   margin-bottom: 20px;
   text-decoration: none;
@@ -61,16 +61,16 @@ label {
   font-size: 16px;
 }
 
-.add_joke-back-button:hover {
+.add-joke--button--back:hover {
   text-decoration: underline;
 }
 
 @media only screen and (max-width: 768px) {
-  .add_joke {
+  .add-joke {
     width: 100vw;
     box-sizing: border-box;
   }
-  .add_joke-container {
+  .add-joke--container {
     width: 90%;
     box-sizing: border-box;
   }

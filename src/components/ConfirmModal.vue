@@ -1,10 +1,10 @@
 <template>
   <div v-if="visible" class="modal">
-    <div class="modal-content">
+    <div class="modal--content">
       <p>{{ message }}</p>
-      <div class="button-container">
+      <div class="app--button--container">
         <button @click="confirm">Confirm</button>
-        <button class="button-cancel" @click="cancel">Cancel</button>
+        <button class="app--button--cancel" @click="cancel">Cancel</button>
       </div>
     </div>
   </div>

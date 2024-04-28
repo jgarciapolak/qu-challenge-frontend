@@ -1,12 +1,12 @@
 <template>
   <div>
-    <input class="table-search-input" type="text" v-model="searchValue" placeholder="Search...">
+    <input class="table--search-input" type="text" v-model="searchValue" placeholder="Search...">
     <!-- Table -->
     <table class="table">
       <!-- Headers -->
       <thead>
-        <tr>
-          <th v-for="(header, index) in headers" :key="index" @click="sortBy(header)">
+        <tr class="table--tr">
+          <th class="table--th" v-for="(header, index) in headers" :key="index" @click="sortBy(header)">
             {{ header }}
             <span v-if="sortOrder === 'asc' && sortedColumn === header">▲</span>
             <span v-if="sortOrder === 'desc' && sortedColumn === header">▼</span>
@@ -15,22 +15,22 @@
       </thead>
       <!-- Body -->
       <tbody>
-        <tr v-for="joke in paginatedDataFiltered" :key="joke.id">
-          <td>{{ joke.id }}</td>
-          <td>{{ joke.type }}</td>
-          <td>{{ joke.setup }}</td>
-          <td>{{ joke.punchline }}</td>
-          <td>
+        <tr v-for="joke in paginatedDataFiltered" class="table--tr" :key="joke.id">
+          <td class="table--td">{{ joke.id }}</td>
+          <td class="table--td">{{ joke.type }}</td>
+          <td class="table--td">{{ joke.setup }}</td>
+          <td class="table--td">{{ joke.punchline }}</td>
+          <td class="table--td">
             <input type="number" :value="joke.rating" @input="handleRatingChange($event)" @blur="rateJoke(joke.id, $event.target.value)" min="0" max="10">
           </td>
-          <td>
-            <button class="button-delete" @click="onDeleteJoke(joke.id)">Delete</button>
+          <td class="table--td">
+            <button class="app--button--delete" @click="onDeleteJoke(joke.id)">Delete</button>
           </td>
         </tr>
       </tbody>
     </table>
     <!-- Table page buttons -->
-    <div class="button-container">
+    <div class="app--button--container">
       <button @click="previousPage" :disabled="currentPage === 1">Previous</button>
       <span>{{ currentPage }} / {{ totalPages }}</span>
       <button @click="nextPage" :disabled="currentPage === totalPages">Next</button>

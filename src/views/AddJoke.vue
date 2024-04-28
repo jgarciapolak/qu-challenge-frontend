@@ -1,25 +1,25 @@
 <template>
-  <div class="add_joke">
-    <div class="add_joke-container">
-      <router-link to="/" class="add_joke-back-button">
+  <div class="add-joke">
+    <div class="add-joke--container">
+      <router-link to="/" class="add-joke--button--back">
         <p>&#8592; Back to Home</p>
       </router-link>
-      <h2>Create New Joke</h2>
+      <h2 class="add-joke--h2">Create New Joke</h2>
       <!-- Create joke form -->
-      <form @submit.prevent="createJoke" class="add_joke-form">
-        <div class="add_joke-row">
-          <label for="type">Type</label>
-          <input type="text" id="type" v-model="type" class="add_joke-input" required>
+      <form @submit.prevent="createJoke" class="add-joke--form">
+        <div class="add-joke--form--row">
+          <label class="add-joke--form--label" for="type">Type</label>
+          <input type="text" id="type" v-model="type" class="add-joke--form--input" required>
         </div>
-        <div class="add_joke-row">
-          <label for="setup">Setup</label>
-          <input type="text" id="setup" v-model="setup" class="add_joke-input" required>
+        <div class="add-joke--form--row">
+          <label class="add-joke--form--label" for="setup">Setup</label>
+          <input type="text" id="setup" v-model="setup" class="add-joke--form--input" required>
         </div>
-        <div class="add_joke-row">
-          <label for="punchline">Punchline</label>
-          <input type="text" id="punchline" v-model="punchline" class="add_joke-input" required>
+        <div class="add-joke--form--row">
+          <label class="add-joke--form--label" for="punchline">Punchline</label>
+          <input type="text" id="punchline" v-model="punchline" class="add-joke--form--input" required>
         </div>
-        <button type="submit" class="add_joke-btn-create">Create Joke</button>
+        <button type="submit" class="add-joke--button--create">Create Joke</button>
       </form>
     </div>
   </div>
